@@ -23,23 +23,23 @@ The goal of the project is to deliver a cloud-based data analytics project which
 <img src="diagrams/Architecture.PNG">
 
 Above is the architecture and high-level steps involved:
-* 1) Data will be read from third party locations
-* 2) Data will be transformed using Amazon EMR and Apache Spark from raw format to parquet format
-* 3) Transformed data will be stored on Amazon S3 (intermediate landing zone) 
-* 4) The transformed data in S3 will be loaded in Amazon Reshift data warehouse
-* 5) Business users can connect directly to Redshift or use a data visualization tool to draw insights from the enriched data.
+* Data will be read from third party locations
+* Data will be transformed using Amazon EMR and Apache Spark from raw format to parquet format
+* Transformed data will be stored on Amazon S3 (intermediate landing zone) 
+* The transformed data in S3 will be loaded in Amazon Reshift data warehouse
+* Business users can connect directly to Redshift or use a data visualization tool to draw insights from the enriched data.
 
 Apache Airflow will be used for workflow management in this project.
 
 
 #### Describe and Gather Data 
-##### # I94 Immigration Data: 
+##### * I94 Immigration Data: 
 This data comes from the US National Tourism and Trade Office. A data dictionary is included in the workspace. This is where the data comes from [here](https://travel.trade.gov/research/reports/i94/historical/2016.html). There's a sample file so you can take a look at the data in csv format before reading it all in. You do not have to use the entire dataset, just use what you need to accomplish the goal you set at the beginning of the project.
-##### # World Temperature Data: 
+##### * World Temperature Data: 
 This dataset came from Kaggle which gives average temperature by `state`. You can read more about it [here](https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data?select=GlobalLandTemperaturesByState.csv).
-##### # U.S. City Demographic Data: 
+##### * U.S. City Demographic Data: 
 This data comes from OpenSoft. You can read more about it [here](https://public.opendatasoft.com/explore/dataset/us-cities-demographics/export/).
-##### # Airport Code Table: 
+##### * Airport Code Table: 
 This is a simple table of airport codes and corresponding cities. It comes from [here](https://datahub.io/core/airport-codes#data). 
 
 
@@ -82,10 +82,10 @@ Please see `exploratory data analysis/spark_etl.ipynb` file attached for detaile
 
 #### 3.2 Mapping Out Data Pipelines
 Below are the detailed steps
-* 1) Data will read from third party locations using `spark_etl.py`.
-* 2) Data will transformed using pandas and Apache Spark from raw format to parquet/csv format through `spark_etl.py`.
-* 3) Transformed data will be stored on Amazon S3 (intermediate landing zone) using `spark_etl.py`.
-* 4) The transformed data in S3 will be loaded in Amazon Reshift data warehouse using airflow.
+* Data will read from third party locations using `spark_etl.py`.
+* Data will transformed using pandas and Apache Spark from raw format to parquet/csv format through `spark_etl.py`.
+* Transformed data will be stored on Amazon S3 (intermediate landing zone) using `spark_etl.py`.
+* The transformed data in S3 will be loaded in Amazon Reshift data warehouse using airflow.
 
 `spark_etl.py` will clean and transform data. It will prepare data and store it in intermediate S3 landing zone. 
 
