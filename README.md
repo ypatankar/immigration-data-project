@@ -103,7 +103,7 @@ Using airflow, the reference tables are created (i.e. SAS labels descriptions da
 Once the reference data is loaded, the next set of dimensions are loaded in Redshift (i.e. temperature data and demographic data).
 After the dimension tables are loaded, the main fact table is loaded with I94 immigration data.
 
-##### ER Diagram
+##### Airflow Diagram
 <img src="diagrams/airflow.PNG">
 
 #### 4.2 Data dictionary 
