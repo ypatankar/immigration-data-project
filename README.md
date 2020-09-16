@@ -59,7 +59,7 @@ Please see `exploratory data analysis/spark_etl.ipynb` file attached for detaile
 
 ### Step 3: Define the Data Model
 #### 3.1 Conceptual Data Model
-* SELECT BUSINESS PROCESS:
+* <b> SELECT BUSINESS PROCESS </b>:
 <br /> Analyze US I-94 immigration data for year 2016. We will be focusing on temperature and demographic data in the US for this project.
 <br />
 * DECLARE GRAIN:
