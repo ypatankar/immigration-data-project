@@ -62,10 +62,12 @@ Please see `exploratory data analysis/spark_etl.ipynb` file attached for detaile
 * <b> SELECT BUSINESS PROCESS </b>:
 <br /> Analyze US I-94 immigration data for year 2016. We will be focusing on temperature and demographic data in the US for this project.
 <br />
+
 * <b> DECLARE GRAIN: </b>
 <br /> Immigration data at transaction level .i.e. Entry/exit details of travelers to/from USA
 <br /> 
-* IDENTIFY DIMENSIONS:
+
+* <b> IDENTIFY DIMENSIONS: </b>
 <br /> - DIM_DEMOGRAPHICS - Contains demographical information of US states
 <br /> - DIM_TEMPERATURE - Contains monthly average temperature data for various states in the US
 <br /> - DIM_I94_CIT_RES - Contains country codes and names for country of citizenship/residence
@@ -74,6 +76,7 @@ Please see `exploratory data analysis/spark_etl.ipynb` file attached for detaile
 <br /> - DIM_I94_MODE - Contains code for mode of travel and description (1-Air, 2-Sea, 3-Land, 9-Not Reported)
 <br /> - DIM_I94_VISA - Contains visa codes and description (1-Business, 2-Pleasure, 3-Student)
 <br /> 
+
 * <b> IDENTIFY FACTS:</b>
 <br /> - FACT_IMMIGRATION - Contains immigration data at transaction level .i.e. Entry/exit of travelers to the US
 
