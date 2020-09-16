@@ -1,7 +1,7 @@
 # US immigration I-94 data project
 
 #### Project Summary
-Create a data analytics solution using immigration data for year 2016, alongwith supporting city demographics data and temperature data, a data analytics solutions is. The goal is to create data pipelines and consolidate data from multiple sources in order to create a single source of truth data store. This data store will facilitate the immigration department make important decisions based on the insights derived from the data.
+A data analytics platform to draw insights from US immigration data for year 2016, alongwith supporting demographics and temperature data. The goal is to create data pipelines and consolidate data from multiple sources in order to create a single source of truth data store. This data store will facilitate the immigration department make important decisions based on the insights derived from the data.
 
 The project follows the follow steps:
 * Step 1: Scope the Project and Gather Data
